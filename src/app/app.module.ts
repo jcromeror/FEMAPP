@@ -8,12 +8,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { StartComponent } from './start/start.component';
 import { AboutComponent } from './about/about.component';
+import { MembersComponent } from './members/members.component';
 
 
 const routes: Routes=[
   {path:"", component: StartComponent},
   {path:"start", component: StartComponent},
   {path:"about", component: AboutComponent},
+  {path:"members", component: MembersComponent},
   {path:"**", redirectTo: "/", pathMatch: "full"}
 ];
 
@@ -24,7 +26,8 @@ const routes: Routes=[
     HeaderComponent,
     FooterComponent,
     StartComponent,
-    AboutComponent
+    AboutComponent,
+    MembersComponent
   ],
   imports: [
     BrowserModule,
